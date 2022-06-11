@@ -15,7 +15,7 @@
  
 <h1>Other projects</h1>
  
- TelegramBot(Telebot):
- TelegramBot(Aiogram):
- Russian Git-Hub:
+ TelegramBot(Telebot):<br>
+ TelegramBot(Aiogram):<br>
+ Russian Git-Hub:<br>
  
