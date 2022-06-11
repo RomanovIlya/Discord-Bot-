@@ -117,16 +117,6 @@ async def clear(ctx, amount=100 ):
 
 @bot.command()
 async def help(ctx):
-    emb=discord.Embed(title="Навигация по коммандам",colour=discord.Color.red())
-    emb.add_field(name='{}join :'.format(Prefix),value='Присоединение бота к голосовому каналу')
-    emb.add_field(name='{}leave :'.format(Prefix),value='Отсоединение бота от голосового канала')
-    emb.add_field(name='{}youtube :'.format(Prefix),value='Смотрим ютуб вместе(сначала присоединитесь к гк)')
-    emb.add_field(name='{}card :'.format(Prefix),value='Карточка пользователя')
-    
-    CH=977545358978744332
-    channel=bot.get_channel(CH)
-    
-
     embed=discord.Embed(title="Навигация по коммандам для админов",colour=discord.Color.red())
     embed.add_field(name='{}join :'.format(Prefix),value='Присоединение бота к голосовому каналу')
     embed.add_field(name='{}leave :'.format(Prefix),value='Отсоединение бота от голосового канала')
@@ -139,13 +129,9 @@ async def help(ctx):
     embed.add_field(name='{}create_text_channel :'.format(Prefix),value='Создание текстового канала')
 
 
-    if ctx.author.id==690187627093033190:
-        await ctx.channel.purge( limit=1)
-        await channel.send(embed=embed)
-        await ctx.send(embed=emb)
+    await ctx.channel.purge( limit=1)
+    await channel.send(embed=embed)
 
-    else:
-        await ctx.send(embed=emb)
 
     
 
@@ -169,7 +155,7 @@ async def card(ctx):
     await ctx.send(embed=emb)
 
 @bot.command()
-#@commands.has_permissions( administrator=True)
+@commands.has_permissions( administrator=True)
 async def mute(ctx,member: discord.Member):
     await ctx.channel.purge( limit=1)
     channel=bot.get_channel(977545358978744332)
