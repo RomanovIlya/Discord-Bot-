@@ -223,5 +223,5 @@ async def create_voice_channel(ctx, channel_name):
 
 
 
-bot.run('OTcxNzQ4MTM3ODIxNjk2MDUx.YnPA-g.rEcTLJOXa3EdVBLChfnofl0uDIk')
+bot.run('Your token')
 
