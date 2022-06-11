@@ -15,7 +15,7 @@
  
 <h1>Other projects</h1>
  
- TelegramBot(Telebot):<br>
+ TelegramBot(Telebot):https://github.com/RomanovIlya/TelegramBot-TeleBot-/tree/main<br>
  TelegramBot(Aiogram):<br>
  Russian Git-Hub:<br>
  
